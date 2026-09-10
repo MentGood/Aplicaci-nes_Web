@@ -15,7 +15,7 @@ h1 {
 }
 
 .imgclass {
-    width: 100%;
+    width: 75%;
 }
 
 .flex {
@@ -26,7 +26,7 @@ h1 {
 
 .left {
     width: 30%;
-    color: #0c0588;
+    color: #2ea443;
 }
 
 .rightdiv {
@@ -45,5 +45,5 @@ h1 {
 
 .leftdiv {
     width: 30%;
-    color: #222cbe;
+    color: #2ea443;
 }
