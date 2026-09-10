@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    background-color: #bcc2cc; 
+}
+
+p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    line-height: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #001eb5;
+}
+
+.imgclass {
+    width: 100%;
+}
+
+.flex {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.left {
+    width: 30%;
+    color: #0c0588;
+}
+
+.rightdiv {
+    width: 50%;
+    color: #050c47;
+}
+
+.divflex {
+    width: 45%;
+    color: #ffffff;
+}
+
+.divflex2 {
+    width: 45%;
+}
+
+.leftdiv {
+    width: 30%;
+    color: #222cbe;
+}
