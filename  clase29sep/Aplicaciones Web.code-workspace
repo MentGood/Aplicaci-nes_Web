@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../proyecto G1"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Aplicaciones Web"
+	}
+}

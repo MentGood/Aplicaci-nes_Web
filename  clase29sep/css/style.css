@@ -1,0 +1,45 @@
+/* son mis variables que pongo al inicio */
+:root {
+    --bg-color: #f4f6f9;
+    --card-bg: #ffffff;
+    --text-color: #1e293b;
+    --accent-color: #2563eb;
+    --border-color: #cbd5e1;
+}
+/* declaro variables cuando ponga el modo oscuro */
+#div_oscuro.modo_oscuro {
+    --bg-color: #0f172a;
+    --card-bg: #1d293b;
+    --text-color: #f8fafc;
+    --accent-color: #38bdf8;
+    --border-color: #334155;
+}
+#div_oscuro {
+    padding: 5rem;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    /* Transicion suave para al cambiar de color */
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+#btn_cambio {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+#btn_cambio:hover {
+    transform: scale(1.05);
+}
+#div_oscuro{
+    padding: 5rem;
+    text-align: center;
+}

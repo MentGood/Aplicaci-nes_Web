@@ -1,0 +1,130 @@
+:root{
+    --amarillo: #f1c40f;
+    --azul: #3498db;
+    --rojo: #e74c3c;
+    --verde: #2ecc71;
+    --cafe: #d35400;
+    --morado: #9b59b6;
+    --naranja: #e67e22;
+    --txtcolor: #131212;
+    --bgcolor: #f3eaea;
+}
+.div_flex.modo_trastapernte{
+    --amarillo: #f1c40f;
+    --verde: #2ecc71;
+    --cafe: #d35400;
+    --rosa: #e84393;
+    --rojo: #e74c3c;
+    --azul: #3498db;
+    --naranja: #e67e22;
+    --texcolor: #f3eaea;
+    --bgcolor: #131212;
+
+
+}
+
+.div_flex{
+    --display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+.div_flexhijo{
+    height: 10rem;
+    width: 16%;
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: transform 0.5s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+
+}
+.div_flexhijo img{
+    width: 100%;
+    border-radius: 15px;
+}
+.amarrillo{
+    background-color: var(--amarillo);
+}
+.azul{
+    background-color: var(--azul);
+
+}
+.rojo{
+    background-color: var(--rojo);
+}
+.rosa{
+    background-color: var (--rosa);
+
+}
+.naranja{
+    background-color: var(--naranja);
+    
+}
+.verde{
+    background-color: var(--verde);
+
+}
+.cafe{
+    background-color: var(--cafe);
+}
+.formulario{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+
+}
+label{
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--txtcolor);
+
+}
+input{
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--txtcolor);
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
+h1{
+    color: var (--txtcolor);
+    font-size: 3rem;
+}
+.btn{
+    padding: 1 rem 2rem;
+    font-size: 2rem;
+    background-color: var(--bgcolor);
+    color: var(--txtcolor);
+    border-radius: 10px;
+    border: 1px solid var(--txtcolor);
+    transition: backround-color 0.5s ease-in-out;
+    
+
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: var(--bgcolor);
+    color: var(--txtcolor);
+    border-radius: 10px;
+    border: 1px solid var(--txtcolor);
+
+}
+p{
+    color: var(--txtcolor);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+
+}
