@@ -1,4 +1,3 @@
-/* Variables para controlar el tema normal y el modo neón */
 :root {
     --bg-color: #ffffff;
     --text-color: #333333;
@@ -18,13 +17,11 @@ body {
     margin: 0 auto;
 }
 
-/* 1. Todos los títulos deben tener otro tipo de letra */
 h1, h2 {
     font-family: 'Oswald', sans-serif;
     margin-bottom: 10px;
 }
 
-/* Estructura general de las secciones */
 section {
     display: flex;
     justify-content: space-between;
@@ -53,18 +50,14 @@ section {
     padding: 0 20px;
 }
 
-/* --- REGLAS DE HOVER DEL PIZARRÓN --- */
-
-/* El texto 1: cuando pasa el mouse cambia de color */
 #texto1 {
     transition: color 0.3s ease;
 }
 #texto1:hover {
-    color: #ff5722; /* Cambia a naranja/rojo */
+    color: #ff5722; 
     cursor: pointer;
 }
 
-/* Imagen 2: cuando pasa el mouse desaparece la img */
 .img2 {
     transition: opacity 0.3s ease;
 }
@@ -72,7 +65,6 @@ section {
     opacity: 0; 
 }
 
-/* Imagen 3: sombra roja y cambiar la imagen a blanco y negro */
 .img3 {
     transition: all 0.3s ease;
 }
@@ -81,7 +73,6 @@ section {
     filter: grayscale(100%);
 }
 
-/* Imagen 4: cambiar tamaño a 115% */
 .img4 {
     transition: transform 0.3s ease;
 }
@@ -89,7 +80,6 @@ section {
     transform: scale(1.15);
 }
 
-/* Estilo básico del botón */
 .btn-container {
     text-align: center;
     margin-top: 40px;
@@ -104,7 +94,6 @@ button {
     transition: all 0.3s;
 }
 
-/* --- DISEÑO RESPONSIVO (Debe ser responsivo) --- */
 @media (max-width: 768px) {
     section, .section-3 .content-row {
         flex-direction: column;
@@ -121,16 +110,14 @@ button {
         height: auto;
     }
 
-    /* En el responsivo (celular) la imagen 4 debe reducir en un 75% */
     .img4 {
         width: 75%; 
     }
     .img4:hover {
-        transform: scale(1.05); /* Escala menor para móviles para no romper la pantalla */
+        transform: scale(1.05); 
     }
 }
 
-/* --- MODO NEÓN ACTIVADO POR EL BOTÓN --- */
 body.modo-neon {
     --bg-color: #0a0a0a;
     --text-color: #ffffff;
@@ -152,7 +139,7 @@ body.modo-neon button {
     border: 2px solid #39ff14;
     box-shadow: 0 0 10px #39ff14, inset 0 0 10px #39ff14;
     text-shadow: 0 0 5px #39ff14;
-}/* Importamos una fuente distinta para los títulos */
+}
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
 •⁠  ⁠{
@@ -163,11 +150,10 @@ body {
     margin: 0;
     padding: 25px;
     font-family: Arial, sans-serif;
-    background-color: #eeeeee; /* Fondo de tu código anterior */
+    background-color: #eeeeee; 
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* 1. Todos los títulos deben tener otro tipo de letra */
 h1, h2 {
     font-family: 'Oswald', sans-serif;
     margin-top: 0;
@@ -181,7 +167,6 @@ h1, h2 {
     margin: 0 auto;
 }
 
-/* Tipología de tu código anterior adaptada a secciones completas */
 .tarjeta {
     background-color: white;
     border: 2px solid #222;
@@ -228,19 +213,15 @@ h1, h2 {
     font-size: 1.1rem;
 }
 
-/* --- REGLAS DEL PIZARRÓN (HOVER) --- */
-
-/* El texto 1: cuando pasa el mouse cambia de color */
 #texto1 {
     transition: color 0.3s;
 }
 #texto1:hover {
-    color: #facc15; /* Amarillo de tu código anterior */
+    color: #facc15; 
     font-weight: bold;
     cursor: pointer;
 }
 
-/* Imagen 2: cuando pasa el mouse desaparece la img */
 #img2 {
     transition: opacity 0.3s ease;
 }
@@ -248,7 +229,6 @@ h1, h2 {
     opacity: 0; 
 }
 
-/* Imagen 3: sombra roja y cambiar la imagen a blanco y negro */
 #img3 {
     transition: all 0.3s ease;
 }
@@ -257,7 +237,6 @@ h1, h2 {
     filter: grayscale(100%);
 }
 
-/* Imagen 4: cambiar tamaño a 115% */
 #img4 {
     transition: transform 0.3s ease, width 0.3s ease;
 }
@@ -265,7 +244,6 @@ h1, h2 {
     transform: scale(1.15);
 }
 
-/* --- ESTILO DEL BOTÓN --- */
 footer {
     display: flex;
     justify-content: center;
@@ -289,7 +267,6 @@ footer {
     background-color: #555555;
 }
 
-/* --- DISEÑO RESPONSIVO --- */
 @media (max-width: 768px) {
     .tarjeta {
         flex-direction: column;
@@ -307,16 +284,14 @@ footer {
         gap: 20px;
     }
 
-    /* Imagen 4: en responsivo debe reducir en un 75% */
     #img4 {
-        width: 25%; /* Equivale a reducirla EN un 75% de su tamaño total */
+        width: 25%; 
     }
     #img4:hover {
-        transform: scale(1.05); /* Escala suave en móvil */
+        transform: scale(1.05); 
     }
 }
 
-/* --- MODO NEÓN ACTIVADO POR EL BOTÓN --- */
 body.colores-nuevos {
     background-color: #111111;
     color: #ffffff;
