@@ -1,148 +1,6 @@
-:root {
-    --bg-color: #ffffff;
-    --text-color: #333333;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    margin: 0;
-    padding: 20px;
-    transition: background-color 0.4s ease, color 0.4s ease;
-}
-
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-h1, h2 {
-    font-family: 'Oswald', sans-serif;
-    margin-bottom: 10px;
-}
-
-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
-    padding-bottom: 20px;
-    border-bottom: 2px dashed #ccc;
-}
-
-.section-3 {
-    flex-direction: column;
-    align-items: center;
-}
-
-.section-3 .content-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.texto-centro {
-    flex: 1;
-    text-align: center;
-    padding: 0 20px;
-}
-
-#texto1 {
-    transition: color 0.3s ease;
-}
-#texto1:hover {
-    color: #ff5722; 
-    cursor: pointer;
-}
-
-.img2 {
-    transition: opacity 0.3s ease;
-}
-.img2:hover {
-    opacity: 0; 
-}
-
-.img3 {
-    transition: all 0.3s ease;
-}
-.img3:hover {
-    box-shadow: 0 0 15px 5px red;
-    filter: grayscale(100%);
-}
-
-.img4 {
-    transition: transform 0.3s ease;
-}
-.img4:hover {
-    transform: scale(1.15);
-}
-
-.btn-container {
-    text-align: center;
-    margin-top: 40px;
-}
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 5px;
-    border: 2px solid #333;
-    transition: all 0.3s;
-}
-
-@media (max-width: 768px) {
-    section, .section-3 .content-row {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .left, .right {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .img4 {
-        width: 75%; 
-    }
-    .img4:hover {
-        transform: scale(1.05); 
-    }
-}
-
-body.modo-neon {
-    --bg-color: #0a0a0a;
-    --text-color: #ffffff;
-}
-
-body.modo-neon h1, body.modo-neon h2 {
-    color: #00ffcc;
-    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc;
-}
-
-body.modo-neon p, body.modo-neon li {
-    color: #ff00ff;
-    text-shadow: 0 0 5px #ff00ff;
-}
-
-body.modo-neon button {
-    background-color: transparent;
-    color: #39ff14;
-    border: 2px solid #39ff14;
-    box-shadow: 0 0 10px #39ff14, inset 0 0 10px #39ff14;
-    text-shadow: 0 0 5px #39ff14;
-}
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
-•⁠  ⁠{
+* {
     box-sizing: border-box;
 }
 
@@ -167,6 +25,7 @@ h1, h2 {
     margin: 0 auto;
 }
 
+/* El diseño de tarjetas que pediste conservar */
 .tarjeta {
     background-color: white;
     border: 2px solid #222;
@@ -213,6 +72,8 @@ h1, h2 {
     font-size: 1.1rem;
 }
 
+/* --- REGLAS DE HOVER --- */
+
 #texto1 {
     transition: color 0.3s;
 }
@@ -229,13 +90,27 @@ h1, h2 {
     opacity: 0; 
 }
 
-#img3 {
-    transition: all 0.3s ease;
+/* --- EL TRUCO INFALIBLE PARA LA IMAGEN 3 --- */
+.contenedor-img3 {
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    display: flex; /* Para que la caja se ajuste exacto a la imagen */
 }
-#img3:hover {
+
+#img3 {
+    transition: filter 0.3s ease;
+}
+
+/* Cuando pasas el mouse, la sombra ROJA se la lleva la caja... */
+.contenedor-img3:hover {
     box-shadow: 0 0 15px 5px red;
+}
+/* ...y el color GRIS se lo lleva la imagen por dentro */
+.contenedor-img3:hover #img3 {
     filter: grayscale(100%);
 }
+
+/* ------------------------------------------ */
 
 #img4 {
     transition: transform 0.3s ease, width 0.3s ease;
@@ -285,13 +160,15 @@ footer {
     }
 
     #img4 {
-        width: 25%; 
+        width: 150px; 
+        margin: 0 auto;
     }
     #img4:hover {
-        transform: scale(1.05); 
+        transform: scale(0.75); 
     }
 }
 
+/* --- MODO NEÓN --- */
 body.colores-nuevos {
     background-color: #111111;
     color: #ffffff;
