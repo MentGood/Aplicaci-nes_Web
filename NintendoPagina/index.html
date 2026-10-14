@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo Store | Tu tienda gamer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="barra">
+        <div class="contenedor menu">
+            <h2 class="logo">NINTENDO <span>STORE</span></h2>
+
+            <div class="enlaces" id="enlaces">
+                <a href="#inicio">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#ofertas">Ofertas</a>
+                <a href="#ubicacion">Ubicación</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+
+            <button class="boton-menu" id="botonMenu">☰</button>
+        </div>
+    </div>
+
+    <div class="portada" id="inicio">
+        <div class="contenedor portada-contenido">
+            <div class="texto-portada">
+                <p class="etiqueta">TU PRÓXIMA AVENTURA COMIENZA AQUÍ</p>
+                <h1>Todo lo que necesitas para tu mundo gamer</h1>
+                <p>
+                    En Nintendo Store encontrarás consolas, controles
+                    y videojuegos para disfrutar al máximo tus partidas.
+                    ¡Elige tu próxima aventura!
+                </p>
+                <a href="#productos" class="boton">Ver productos</a>
+            </div>
+
+            <div class="imagen-portada">
+                <img
+                    src="https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?auto=format&fit=crop&w=900&q=85"
+                    alt="Consola y videojuegos">
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor beneficios">
+        <div class="beneficio">
+            <span>🎮</span>
+            <h3>Gran variedad</h3>
+            <p>Consolas, controles y videojuegos.</p>
+        </div>
+
+        <div class="beneficio">
+            <span>⭐</span>
+            <h3>Juegos favoritos</h3>
+            <p>Encuentra títulos para todos los gustos.</p>
+        </div>
+
+        <div class="beneficio">
+            <span>💬</span>
+            <h3>Atención personal</h3>
+            <p>Contáctanos para resolver tus dudas.</p>
+        </div>
+    </div>
+
+    <div class="fondo-productos" id="productos">
+        <div class="contenedor">
+            <div class="encabezado">
+                <p class="etiqueta">CONOCE NUESTRO CATÁLOGO</p>
+                <h2>Productos destacados</h2>
+                <p>Estos son algunos de los productos que tenemos para ti.</p>
+            </div>
+
+            <div class="productos">
+
+                <div class="tarjeta">
+                    <img
+                        src="https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?auto=format&fit=crop&w=700&q=85"
+                        alt="Consola de videojuegos">
+                    <div class="informacion">
+                        <p class="categoria">CONSOLA</p>
+                        <h3>Nintendo Switch</h3>
+                        <p>Disfruta tus juegos favoritos en casa o donde quieras.</p>
+                        <p class="precio">$5,999 MXN</p>
+                        <a class="boton producto-boton"
+                           href="#contacto"
+                           data-producto="Nintendo Switch">
+                           Consultar producto
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <img
+                        src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=700&q=85"
+                        alt="Control de videojuegos">
+                    <div class="informacion">
+                        <p class="categoria">ACCESORIOS</p>
+                        <h3>Controles gamer</h3>
+                        <p>Mejora tus partidas con accesorios para jugar cómodamente.</p>
+                        <p class="precio">$1,299 MXN</p>
+                        <a class="boton producto-boton"
+                           href="#contacto"
+                           data-producto="Controles gamer">
+                           Consultar producto
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <img
+                        src="https://images.unsplash.com/photo-1604586376807-f73185cf5867?auto=format&fit=crop&w=700&q=85"
+                        alt="Videojuegos">
+                    <div class="informacion">
+                        <p class="categoria">VIDEOJUEGOS</p>
+                        <h3>Mario Kart 8 Deluxe</h3>
+                        <p>Compite con tus personajes favoritos y reta a tus amigos.</p>
+                        <p class="precio">$1,199 MXN</p>
+                        <a class="boton producto-boton"
+                           href="#contacto"
+                           data-producto="Mario Kart 8 Deluxe">
+                           Consultar producto
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <img
+                        src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?auto=format&fit=crop&w=700&q=85"
+                        alt="Videojuegos y accesorios">
+                    <div class="informacion">
+                        <p class="categoria">VIDEOJUEGOS</p>
+                        <h3>Super Mario Bros. Wonder</h3>
+                        <p>Explora mundos coloridos y vive una aventura diferente.</p>
+                        <p class="precio">$1,199 MXN</p>
+                        <a class="boton producto-boton"
+                           href="#contacto"
+                           data-producto="Super Mario Bros. Wonder">
+                           Consultar producto
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <img
+                        src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=700&q=85"
+                        alt="Persona jugando videojuegos">
+                    <div class="informacion">
+                        <p class="categoria">VIDEOJUEGOS</p>
+                        <h3>The Legend of Zelda</h3>
+                        <p>Descubre un mundo lleno de exploración y desafíos.</p>
+                        <p class="precio">$1,299 MXN</p>
+                        <a class="boton producto-boton"
+                           href="#contacto"
+                           data-producto="The Legend of Zelda">
+                           Consultar producto
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <img
+                        src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=700&q=85"
+                        alt="Equipo de videojuegos">
+                    <div class="informacion">
+                        <p class="categoria">ACCESORIOS</p>
+                        <h3>Accesorios gamer</h3>
+                        <p>Complementa tu espacio de juego con nuevos accesorios.</p>
+                        <p class="precio">Desde $299 MXN</p>
+                        <a class="boton producto-boton"
+                           href="#contacto"
+                           data-producto="Accesorios gamer">
+                           Consultar producto
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="aviso-precios">
+                *Los precios son ilustrativos para este proyecto escolar
+                y no representan una oferta real.
+            </p>
+        </div>
+    </div>
+
+    <div class="oferta" id="ofertas">
+        <div class="contenedor oferta-contenido">
+            <div>
+                <p class="etiqueta">¡NO TE LO PIERDAS!</p>
+                <h2>Encuentra tu siguiente juego favorito</h2>
+                <p>
+                    Pregunta por la disponibilidad de nuestros productos
+                    y conoce las opciones que tenemos para ti.
+                </p>
+            </div>
+
+            <a href="#contacto" class="boton boton-blanco">
+                Preguntar por ofertas
+            </a>
+        </div>
+    </div>
+
+    <div class="contenedor ubicacion" id="ubicacion">
+        <div class="encabezado">
+            <p class="etiqueta">VEN A CONOCERNOS</p>
+            <h2>Ubicación de nuestra tienda</h2>
+            <p>
+                Por ahora utilizamos Tula de Allende, Hidalgo,
+                como ubicación provisional de Nintendo Store.
+            </p>
+        </div>
+
+        <div class="mapa-contenedor">
+            <iframe
+                src="https://maps.google.com/maps?q=Tula%20de%20Allende%2C%20Hidalgo%2C%20Mexico&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                title="Mapa de Tula de Allende, Hidalgo"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="datos-ubicacion">
+            <div>
+                <h3>📍 Dirección</h3>
+                <p>Tula de Allende, Hidalgo, México.</p>
+                <p>Ubicación provisional para el proyecto escolar.</p>
+            </div>
+
+            <div>
+                <h3>🕒 Horario de ejemplo</h3>
+                <p>Lunes a sábado</p>
+                <p>10:00 a. m. - 7:00 p. m.</p>
+            </div>
+
+            <div>
+                <h3>💬 Atención</h3>
+                <p>Escríbenos mediante el formulario de contacto.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="fondo-contacto" id="contacto">
+        <div class="contenedor contacto">
+            <div class="texto-contacto">
+                <p class="etiqueta">ESTAMOS PARA AYUDARTE</p>
+                <h2>¿Buscas algún producto?</h2>
+                <p>
+                    Completa el formulario y dinos qué producto te interesa.
+                    Podrás ver una confirmación en esta misma página.
+                </p>
+                <p>¡Gracias por visitar nuestra tienda!</p>
+            </div>
+
+            <form id="formulario">
+                <label for="nombre">Nombre</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Escribe tu nombre"
+                    required>
+
+                <label for="correo">Correo electrónico</label>
+                <input
+                    type="email"
+                    id="correo"
+                    placeholder="ejemplo@correo.com"
+                    required>
+
+                <label for="producto">Producto de interés</label>
+                <select id="producto" required>
+                    <option value="">Selecciona un producto</option>
+                    <option>Nintendo Switch</option>
+                    <option>Controles gamer</option>
+                    <option>Mario Kart 8 Deluxe</option>
+                    <option>Super Mario Bros. Wonder</option>
+                    <option>The Legend of Zelda</option>
+                    <option>Accesorios gamer</option>
+                    <option>Otro producto</option>
+                </select>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                    id="mensaje"
+                    rows="4"
+                    placeholder="¿Qué te gustaría consultar?"
+                    required></textarea>
+
+                <button type="submit" class="boton">
+                    Enviar consulta
+                </button>
+
+                <p id="respuesta"></p>
+            </form>
+        </div>
+    </div>
+
+    <div class="pie">
+        <div class="contenedor pie-contenido">
+            <div>
+                <h2 class="logo">NINTENDO <span>STORE</span></h2>
+                <p>Tu espacio para disfrutar el mundo gamer.</p>
+            </div>
+
+            <div>
+                <p>Proyecto escolar de desarrollo web.</p>
+                <p>©️ 2026 Nintendo Store - Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
