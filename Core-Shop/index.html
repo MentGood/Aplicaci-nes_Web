@@ -54,25 +54,25 @@
       <div class="row g-3">
         <div class="col-6 col-lg-3" data-aos="fade-up">
           <a href="sudaderas.html" class="categoria">
-            <img src="img/sudaderas.jpg" alt="Sudaderas" onerror="this.onerror=null; this.src='img/sin-foto.svg';">
+            <img src="img/sudaderas.webp" alt="Sudaderas" >
             <span>Sudaderas</span>
           </a>
         </div>
         <div class="col-6 col-lg-3" data-aos="fade-up">
           <a href="gorras.html" class="categoria">
-            <img src="img/gorras.jpg" alt="Gorras" onerror="this.onerror=null; this.src='img/sin-foto.svg';">
+            <img src="img/gorras.webp" alt="Gorras" >
             <span>Gorras</span>
           </a>
         </div>
         <div class="col-6 col-lg-3" data-aos="fade-up">
           <a href="crocs.html" class="categoria">
-            <img src="img/crocs.jpg" alt="Crocs" onerror="this.onerror=null; this.src='img/sin-foto.svg';">
+            <img src="img/crocs.webp" alt="Crocs" >
             <span>Crocs</span>
           </a>
         </div>
         <div class="col-6 col-lg-3" data-aos="fade-up">
           <a href="playeras.html" class="categoria">
-            <img src="img/playeras.jpg" alt="Playeras" onerror="this.onerror=null; this.src='img/sin-foto.svg';">
+            <img src="img/playeras.webp" alt="Playeras">
             <span>Playeras</span>
           </a>
         </div>
@@ -91,3 +91,50 @@
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 </body>
 </html>
+<section id="contacto" class="row justify-content-center mt-5 pt-4">
+      <div class="col-12 col-lg-8">
+        <h2 class="text-center">Contacto</h2>
+        <p class="text-secondary text-center mb-4">¿Tienes una duda o buscas algo en especial? Escríbenos.</p>
+        <form id="form-contacto" class="formulario p-4" novalidate>
+          <div id="mensaje" class="mensaje p-3 mb-3 d-none"></div>
+
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+              <label for="nombre" class="form-label">Nombre completo</label>
+              <input type="text" id="nombre" class="form-control" required>
+              <div class="invalid-feedback"></div>
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="correo" class="form-label">Correo</label>
+              <input type="email" id="correo" class="form-control" required>
+              <div class="invalid-feedback"></div>
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="tel" id="telefono" class="form-control" maxlength="10" required>
+              <div class="invalid-feedback"></div>
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="asunto" class="form-label">Asunto</label>
+              <select id="asunto" class="form-select" required>
+                <option value="">Selecciona…</option>
+                <option>Duda sobre un producto</option>
+                <option>Pedido especial</option>
+                <option>Tallas</option>
+                <option>Otro</option>
+              </select>
+              <div class="invalid-feedback"></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+                <div class="col-12">
+              <label for="comentario" class="form-label">Mensaje</label>
+              <textarea id="comentario" class="form-control" rows="4" required></textarea>
+              <div class="invalid-feedback"></div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-rv w-100 py-2">Enviar</button>
+            </div>
+    
