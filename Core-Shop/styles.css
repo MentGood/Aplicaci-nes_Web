@@ -1,0 +1,16 @@
+:root {
+  --negro: #141414;
+  --crema: #F6F2EC;
+  --arena: #C8B8A2;
+  --terracota: #A3441F;
+}
+
+body {
+  font-family: "Archivo", Arial, sans-serif;
+  background-color: var(--crema);
+  color: var(--negro);
+}
+h1, h2, h3, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Fraunces", Georgia, serif;
+  color: inherit;
+}
