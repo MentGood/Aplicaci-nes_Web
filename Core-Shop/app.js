@@ -31,3 +31,4 @@ if (contenedor) {
       </article>
     </div>`).join("");
 }
+AOS.init({ duration: 700, once: true });
