@@ -10,10 +10,12 @@ body {
   background-color: var(--crema);
   color: var(--negro);
 }
+
 h1, h2, h3, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Fraunces", Georgia, serif;
   color: inherit;
 }
+
 .navbar {
   background-color: #fff;
   border-bottom: 1px solid #E6DFD4;
@@ -36,10 +38,7 @@ h1, h2, h3, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .nav-link:hover {
   color: var(--terracota) !important;
 }
-footer {
-  background-color: var(--negro);
-  color: var(--crema);
-}
+
 .categoria {
   position: relative;
   display: block;
@@ -71,6 +70,7 @@ footer {
   font-size: 1.2rem;
   white-space: nowrap;
 }
+
 .btn-rv {
   background-color: var(--negro);
   color: #fff;
@@ -84,6 +84,19 @@ footer {
   background-color: var(--terracota);
   color: #fff;
 }
+
+.producto {
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+}
+
+.producto img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  background-color: #EEE8DF;
+}
+
 .formulario {
   background-color: #fff;
 }
@@ -101,4 +114,19 @@ footer {
 .mensaje.exito {
   border-left-color: #2E6B45;
   background-color: #E8F3EC;
+}
+
+footer {
+  background-color: var(--negro);
+  color: var(--crema);
+}
+
+.volver {
+  color: var(--negro);
+  text-decoration: none;
+  font-size: .9rem;
+}
+
+.volver:hover {
+  color: var(--terracota);
 }
