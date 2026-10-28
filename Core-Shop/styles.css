@@ -84,3 +84,21 @@ footer {
   background-color: var(--terracota);
   color: #fff;
 }
+.formulario {
+  background-color: #fff;
+}
+
+.form-control,
+.form-select {
+  border-radius: 0;
+}
+
+.mensaje {
+  border-left: 4px solid var(--terracota);
+  background-color: #FBEDE7;
+}
+
+.mensaje.exito {
+  border-left-color: #2E6B45;
+  background-color: #E8F3EC;
+}
