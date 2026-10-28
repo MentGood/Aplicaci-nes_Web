@@ -71,3 +71,16 @@ footer {
   font-size: 1.2rem;
   white-space: nowrap;
 }
+.btn-rv {
+  background-color: var(--negro);
+  color: #fff;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: .1em;
+}
+
+.btn-rv:hover {
+  background-color: var(--terracota);
+  color: #fff;
+}
